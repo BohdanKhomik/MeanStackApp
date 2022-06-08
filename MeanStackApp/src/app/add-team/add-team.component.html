@@ -1,0 +1,56 @@
+<div class="row">
+    <div class="col-md-12 text-center">
+        <h2>Add Team</h2>
+    </div>
+    <div class="row">
+        <form [formGroup]="addTeam" novalidate class="form">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">Team Name</div>
+                <div class="col-md-4">
+                    <input type="text" formControlName="team_name">
+                </div>
+
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">Team Region</div>
+                <div class="col-md-4">
+                    <input type="text" formControlName="team_region">
+                </div>
+
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">Team Logotipe</div>
+                <div class="col-md-4">
+                    <input type="text" formControlName="team_logotipe">
+                </div>
+
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">Team Prize Money</div>
+                <div class="col-md-4">
+                    <input type="text" formControlName="team_prize_money">
+                </div>
+
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <button type="submit" (click)="onSubmit()" class="btn btn-success">Add Team</button>
+                </div>
+
+
+                <div class="col-md-2"></div>
+            </div>
+        </form>
+    </div>
+</div>

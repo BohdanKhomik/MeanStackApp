@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-md-12 text-center">
+        <h2>Team's list</h2>
+    </div>
+</div>
+
+<div class="row">
+    <table class="table">
+        <thead>
+            <th>Team Name</th>
+            <th>Team Region</th>
+            <th>Team Logotipe</th>
+            <th>Team Prize Money</th>
+            <th>EDIT || DELETE</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let team of teams">
+                <td>{{team.team_name}}</td>
+                <td>{{team.team_region}}</td>
+                <td>{{team.team_logotipe}}</td>
+                <td>{{team.team_prize_money}}</td>
+                <td>
+                    <a href="edit-team/{{team._id}}" class="btn btn-success">EDIT</a> | <button (click)="delTeam(team)" class="btn btn-danger">DELETE</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
